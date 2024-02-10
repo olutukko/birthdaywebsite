@@ -1,0 +1,26 @@
+[
+  {
+    "name": "kakku1",
+    "id": 0,
+    "imageUrl": "2024-02-09T12:37:59.801Zcake1.jpg",
+    "reserved": false
+  },
+  {
+    "name": "kakku2",
+    "id": 1,
+    "imageUrl": "2024-02-09T12:38:08.782Zcake2.jpg",
+    "reserved": false
+  },
+  {
+    "name": "kakku3",
+    "id": 2,
+    "imageUrl": "2024-02-09T12:38:15.264Zcake3.jpg",
+    "reserved": true
+  },
+  {
+    "name": "jokulelu",
+    "id": 3,
+    "imageUrl": "2024-02-09T12:38:23.742Zkuva.jpg",
+    "reserved": true
+  }
+]
