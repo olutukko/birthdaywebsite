@@ -11,7 +11,7 @@ function GiftReservation() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://192.168.1.3:3001/gifts');
+                const response = await fetch('http://192.168.1.194:3001/gifts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -32,7 +32,7 @@ function GiftReservation() {
     };
 
     const handleConfirm = async () => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${confirmingGift.id}`, {
+        const response = await fetch(`http://192.168.1.194:3001/gifts/${confirmingGift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function GiftReservation() {
     };
 
     const handleCancel = async (gift) => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
+        const response = await fetch(`http://192.168.1.194:3001/gifts/${gift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -69,12 +69,16 @@ function GiftReservation() {
     return (
         <>
             <div className="container">
-            <BackButton to="/" />
-            {gifts && gifts.map((gift, index) => (
-                <div key={index}>
-                    <GiftButton gift={gift} handleClick={handleGiftClick} handleConfirm={handleConfirm} handleCancel={handleCancel} confirmingGift={confirmingGift} />
+                <div className='container-items'>
+                    {gifts && gifts.map((gift, index) => (
+                    <div key={index}>
+                        <GiftButton gift={gift} handleClick={handleGiftClick} handleConfirm={handleConfirm} handleCancel={handleCancel} confirmingGift={confirmingGift} />
+                    </div>
+                    ))}
+                    <BackButton to="/" />
                 </div>
-            ))}
+            
+
             </div>
         </>
     )

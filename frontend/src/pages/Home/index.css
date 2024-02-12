@@ -1,9 +1,3 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 
 .invitation-page {
   background-image: url('../../assets/kutsu-kuva.jpg');
@@ -11,23 +5,23 @@ body, html {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .content-container {
-  max-width: 75vw; /* Adjust as needed */
-  min-width: 60vw;
-  width: 100%;
-  height: 90vh;
+  max-width: 75vw;
+
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 black, 0 -1px black;
   padding: 20px;
   box-sizing: border-box;;
 }
@@ -41,34 +35,52 @@ body, html {
 }
 
 .button-container {
-  position: relative; /* Add this */
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
+  margin-top: 10em;
 }
 
 .button-container button {
-  position: absolute; /* Add this */
-  left: 65%; /* Add this */
+  position: absolute;
+  left: 65%;
 }
 
-@media (max-width: 600px) {
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../assets/Modesty-modded.ttf');
+}
+
+
+@media (max-width: 768px) {
   .content-container {
     max-width: 100vw;
     min-width: 100vw;
 
     aspect-ratio: auto;
+    
+    max-height: 65vh;
+  }
+  h1, p {
+    font-family: 'MyCustomFont';
+    max-width: 95vw;
+    font-size: 2em;
   }
 }
 
-@font-face {
-  font-family: 'MyCustomFont'; /* Replace with your font name */
-  src: url('../../assets/Modesty-modded.ttf'); /* Replace with the path to your .ttf file */
-}
 
-h1, p {
-  font-family: 'MyCustomFont'; /* Replace with your font name */
-  font-size: 4em;
-  margin: 5%;
+@media (min-width: 768px) {
+  h1, p {
+    font-family: 'MyCustomFont';
+    font-size: 3em;
+    margin: 5%;
+    max-width: 60%;
+    line-height: 1;
+    margin: 0.5em 0;
+  }
+  .title {
+    font-size: 5em;
+  }
 }

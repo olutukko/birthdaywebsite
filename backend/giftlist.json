@@ -3,7 +3,7 @@
     "name": "kakku1",
     "id": 0,
     "imageUrl": "2024-02-09T12:37:59.801Zcake1.jpg",
-    "reserved": false
+    "reserved": true
   },
   {
     "name": "kakku2",
@@ -22,5 +22,11 @@
     "id": 3,
     "imageUrl": "2024-02-09T12:38:23.742Zkuva.jpg",
     "reserved": true
+  },
+  {
+    "name": "huhhuh",
+    "id": 6,
+    "imageUrl": "2024-02-11T11:58:15.156Zcake1.jpg",
+    "reserved": false
   }
 ]

@@ -1,14 +1,51 @@
-.gift-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .gift-button h2 {
-    flex-grow: 1;
-  }
+.gift-item {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
 
+  width: 100%;
+
+}
+
+.gift-name{
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+
+.confirmation-button{
+  width: 20%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.gift-image {
+  width: 100%;
+  max-height: 50vh;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.gift-button h2 {
+  flex-grow: 1;
+}
+
+.lock{
+  font-size: 3em;
+}
+
+@media (max-width: 768px) {
   .gift-image {
-    width: 10vw;
-    height: 10vh;
+      width: 40vw;
+      height: 20vh;
+      max-height: 50vh;
+      border-radius: 1em;
   }
+  .lock{
+      font-size: 2em;
+  }
+}

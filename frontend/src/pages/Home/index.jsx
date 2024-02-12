@@ -29,8 +29,8 @@ const InvitationPage = () => {
     <div className="invitation-page" >
       <div className="content-container">
         <div className="text-container">
-          <p>Tervetuloa Adessan 1-vuotis syntymäpäiväjuhliin</p>
-          <p>lauantaina 23.3 | klo : 15:00</p>
+          <p className='title'>Tervetuloa Adessan 1-vuotis syntymäpäiväjuhliin</p>
+          <p>lauantaina 23.3. klo : 15:00</p>
           <p>Tervaskatu 12 A 2</p>
           <p>Ilmoitathan, jos et pääse tulemaan</p>
         </div>
