@@ -26,18 +26,18 @@ const InvitationPage = () => {
   };
   //style={{ backgroundImage: `url(${images[currentImageIndex]})
   return (
-    <div className="invitation-page" >
-      <div className="content-container">
-        <div className="text-container">
-          <p className='title'>Tervetuloa Adessan 1-vuotis syntymäpäiväjuhliin</p>
-          <p>lauantaina 23.3. klo : 15:00</p>
-          <p>Tervaskatu 12 A 2</p>
-          <p>Ilmoitathan, jos et pääse tulemaan</p>
+    <div className="invitation-page">
+        <div className="invitation-content-container">
+            <div className="invitation-button-container">
+                <button onClick={handleButtonClick}>Lahjalistalle</button>
+            </div>
+            <div className="invitation-text-container">
+                <h1 className='invitation-title'>Tervetuloa Adessan 1-vuotis syntymäpäiväjuhliin</h1>
+                <p>lauantaina 23.3. klo : 15:00</p>
+                <p>Tervaskatu 12 A 2</p>
+                <p>Ilmoitathan, jos et pääse tulemaan</p>
+            </div>
         </div>
-        <div className="button-container">
-          <button onClick={handleButtonClick}>Lahjalistalle</button>
-        </div>
-      </div>
     </div>
   );
 };

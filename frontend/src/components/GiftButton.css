@@ -1,35 +1,19 @@
 .gift-item {
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-
+  table-layout: fixed;
   width: 100%;
-
 }
 
 .gift-name{
   width: 50%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-
 }
 
 .confirmation-button{
   width: 20%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
 }
 
-.gift-image {
-  width: 100%;
-  max-height: 50vh;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+.gift-link {
+  width: 30%;
 }
-
 .gift-button h2 {
   flex-grow: 1;
 }

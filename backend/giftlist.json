@@ -1,32 +1,80 @@
 [
   {
-    "name": "kakku1",
-    "id": 0,
-    "imageUrl": "2024-02-09T12:37:59.801Zcake1.jpg",
-    "reserved": true
+    "name": "Xylofon Kanin Rosa Jabadabado",
+    "websiteUrl": "https://www.adlibris.com/fi/tuote/xylofon-kanin-rosa-jabadabado-53472559?gad_source=1&gclid=EAIaIQobChMI5Ivy-9CmhAMVyAqiAx3lzQ-VEAQYAyABEgJOcfD_BwE&article=P53472559",
+    "reserved": false,
+    "id": 0
   },
   {
-    "name": "kakku2",
-    "id": 1,
-    "imageUrl": "2024-02-09T12:38:08.782Zcake2.jpg",
-    "reserved": false
+    "name": "Jabadabado Autorata ja neljä autoa Vaaleanpunainen",
+    "websiteUrl": "https://www.adlibris.com/fi/tuote/jabadabado-autorata-ja-nelja-autoa-vaaleanpunainen-46041151?gad_source=1&gclid=EAIaIQobChMIlqnIwdKmhAMV3RCiAx32vwJQEAQYASABEgIUbvD_BwE&article=P46041151",
+    "reserved": false,
+    "id": 1
   },
   {
-    "name": "kakku3",
-    "id": 2,
-    "imageUrl": "2024-02-09T12:38:15.264Zcake3.jpg",
-    "reserved": true
+    "name": "Oppi&ilo Minun eläimeni äänikirja",
+    "websiteUrl": "https://www.leikkien.fi/product/2384/oppiilo-minun-elaimeni-aanikirja?gad_source=1&gclid=EAIaIQobChMI49C3mtOmhAMVVQmiAx2eaglGEAQYCCABEgLmQvD_BwE",
+    "reserved": false,
+    "id": 2
   },
   {
-    "name": "jokulelu",
-    "id": 3,
-    "imageUrl": "2024-02-09T12:38:23.742Zkuva.jpg",
-    "reserved": true
+    "name": "Little Moments Big Memories",
+    "websiteUrl": "https://www.boozt.com/fi/fi/printworks/bookshelf-album-little-moments-big-memories_30050319/224026182?gad_source=1&gclid=EAIaIQobChMItaO5ydOmhAMV3wCiAx3gaAlLEAQYAiABEgJSVPD_BwE&utm_campaign=dk_td_Precisdigital.com_/_Google_Shopping_CSS__FI_&utm_source=tradedoubler&utm_medium=cpa",
+    "reserved": false,
+    "id": 3
   },
   {
-    "name": "huhhuh",
-    "id": 6,
-    "imageUrl": "2024-02-11T11:58:15.156Zcake1.jpg",
-    "reserved": false
+    "name": "Nuppipalapelit",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 4
+  },
+  {
+    "name": "Mustat vedenkestävät hanskat / vuorelliset kurahanskat",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 5
+  },
+  {
+    "name": "Palikkalaatikko",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 6
+  },
+  {
+    "name": "Ääntä pitävä autolelu",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 7
+  },
+  {
+    "name": "Sormivärit",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 8
+  },
+  {
+    "name": "Piirustuspaperia, paksut puuvärikynät ja teroitin",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 9
+  },
+  {
+    "name": "Aurinkolasit",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 10
+  },
+  {
+    "name": "Taaperokärry",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 11
+  },
+  {
+    "name": "Potkumopo",
+    "websiteUrl": "",
+    "reserved": false,
+    "id": 12
   }
 ]

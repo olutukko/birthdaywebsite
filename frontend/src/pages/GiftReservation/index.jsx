@@ -11,7 +11,7 @@ function GiftReservation() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://192.168.1.194:3001/gifts');
+                const response = await fetch('http://192.168.1.3:3001/gifts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -32,7 +32,7 @@ function GiftReservation() {
     };
 
     const handleConfirm = async () => {
-        const response = await fetch(`http://192.168.1.194:3001/gifts/${confirmingGift.id}`, {
+        const response = await fetch(`http://192.168.1.3:3001/gifts/${confirmingGift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function GiftReservation() {
     };
 
     const handleCancel = async (gift) => {
-        const response = await fetch(`http://192.168.1.194:3001/gifts/${gift.id}`, {
+        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -67,21 +67,31 @@ function GiftReservation() {
 
 
     return (
-        <>
-            <div className="container">
-                <div className='container-items'>
+        <div className="gift-container">
+            <div className="back-button-container">
+                <BackButton to="/" className="back-button"/>
+            </div>
+            <div className='gift-list-container'>
+                <div className='gift-list'>
                     {gifts && gifts.map((gift, index) => (
-                    <div key={index}>
+                    <div key={index} className="gift-item">
                         <GiftButton gift={gift} handleClick={handleGiftClick} handleConfirm={handleConfirm} handleCancel={handleCancel} confirmingGift={confirmingGift} />
                     </div>
                     ))}
-                    <BackButton to="/" />
                 </div>
-            
-
             </div>
-        </>
-    )
+            <div className="text-container">
+                <p>
+                    Tai jos et halua valita noista mitään niin nämä ovat aina tervetulleita ja lahjoja 🙂<br />
+                    Kesävaatteita 80 koossa<br />
+                    Vaippoja<br />
+                    Naksuja<br />
+                    Kaikenlaiset ääntä pitävät lelut<br />
+                    Rahaa Adessan säästöpossuun
+                </p>
+            </div>
+        </div>
+    );
 }
 
 export default GiftReservation;
