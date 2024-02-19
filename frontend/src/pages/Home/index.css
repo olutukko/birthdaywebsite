@@ -1,14 +1,15 @@
 .invitation-page {
+  position: relative;
   height: 100vh;
-  width: 100%;
+  width: auto;
+  overflow: hidden;
   background-image: url('../../assets/kutsu-kuva.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 
@@ -26,7 +27,8 @@
 
 .invitation-button-container {
   align-self: flex-end;
-  margin: 10%;
+  margin-top: 20%;
+  margin-right: 5%;
 }
 
 .invitation-text-container {
@@ -34,6 +36,7 @@
   margin-bottom: 10%;
   font-family: 'MyCustomFont';
   font-size: 3em;
+  max-width: 50vw;
 }
 
 .invitation-title {
@@ -42,9 +45,13 @@
 
 @media (max-width: 768px) {
   .invitation-page {
+    width: 100vw;
+    height: auto;
     background-size: 100% 100%;
   }
   .invitation-text-container {
     font-size: 2em;
+    max-width: 90vw;
+    margin-top: 25%;
   }
 }

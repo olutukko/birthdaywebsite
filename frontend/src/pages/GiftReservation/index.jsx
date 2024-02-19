@@ -3,7 +3,6 @@ import './App.css';
 import GiftButton from '../../components/GiftButton';
 import BackButton from '../../components/BackButton';
 
-
 function GiftReservation() {
     const [gifts, setGifts] = useState(null);
     const [confirmingGift, setConfirmingGift] = useState(null);
@@ -11,7 +10,7 @@ function GiftReservation() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://192.168.1.3:3001/gifts');
+                const response = await fetch('https://lahjasivu-backend.fly.dev/gifts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -32,7 +31,7 @@ function GiftReservation() {
     };
 
     const handleConfirm = async () => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${confirmingGift.id}`, {
+        const response = await fetch(`https://lahjasivu-backend.fly.dev/gifts/${confirmingGift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +48,7 @@ function GiftReservation() {
     };
 
     const handleCancel = async (gift) => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
+        const response = await fetch(`https://lahjasivu-backend.fly.dev/gifts/${gift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ function AdminPage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://192.168.1.3:3001/gifts');
+                const response = await fetch('https://lahjasivu-backend.fly.dev/gifts');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -26,7 +26,7 @@ function AdminPage() {
     }, []);
 
     const handleClick = async (gift) => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
+        const response = await fetch(`https://lahjasivu-backend.fly.dev/gifts/${gift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function AdminPage() {
     };
 
     const handleDelete = async (gift) => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
+        const response = await fetch(`https://lahjasivu-backend.fly.dev/gifts/${gift.id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
@@ -55,7 +55,7 @@ function AdminPage() {
 
     const handleAdd = async (event) => {
         event.preventDefault();
-        const response = await fetch('http://192.168.1.3:3001/gifts', {
+        const response = await fetch('https://lahjasivu-backend.fly.dev/gifts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ function AdminPage() {
     };
 
     const handleCancel = async (gift) => {
-        const response = await fetch(`http://192.168.1.3:3001/gifts/${gift.id}`, {
+        const response = await fetch(`https://lahjasivu-backend.fly.dev/gifts/${gift.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
